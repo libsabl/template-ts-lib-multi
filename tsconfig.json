@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "incremental": true,
+    "composite": true,
+    "module": "commonjs",
+    "target": "esnext",
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "useDefineForClassFields": true,
+    "forceConsistentCasingInFileNames": true
+  }
+}

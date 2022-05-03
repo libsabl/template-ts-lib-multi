@@ -1,0 +1,32 @@
+{
+  "name": "@example/strings",
+  "version": "0.1.0",
+  "description": "Example strings package",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc --build tsconfig.build.json",
+    "clean": "rimraf ./coverage ./dist",
+    "lint": "eslint \"src/**/*.ts\" --fix",
+    "test": "jest",
+    "test:view": "pwsh -File ../../.scripts/test.ps1 -View -Pretty",
+    "test:refresh": "pwsh -File ../../.scripts/test.ps1 -Render -Pretty",
+    "cbt": "pnpm clean && pnpm build && pnpm test",
+    "publish": "pwsh -File ../../.scripts/publish-package.ps1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "",
+    "directory": "packages/strings"
+  },
+  "contributors": [
+    ""
+  ],
+  "keywords": [ ],
+  "license": "MIT",
+  "files": [
+    "tsconfig.json",
+    "src/**/*",
+    "dist/**/*"
+  ]
+}
